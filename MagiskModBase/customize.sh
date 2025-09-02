@@ -115,19 +115,19 @@ testKernelSU()
     	fi;
     fi;
 }
-
-assertPixelRom()
-{
-	PixelTipsPattern="TipsPrebuilt*"
-	PixelTipsParent="/product/priv-app"
-
-  if ! find "$PixelTipsParent" -maxdepth 1 -name "$PixelTipsPattern" -print -quit | grep -q .; then
-  	ui_print 'Device does not seem to be a Pixel'
-  	ui_print 'phone, containing an original ROM.'
-
-    abort 'Installation aborted due to incompatibility'
-  fi
-}
+#
+#assertPixelRom()
+#{
+#	PixelTipsPattern="TipsPrebuilt*"
+#	PixelTipsParent="/product/priv-app"
+#
+#  if ! find "$PixelTipsParent" -maxdepth 1 -name "$PixelTipsPattern" -print -quit | grep -q .; then
+#  	ui_print 'Device does not seem to be a Pixel'
+#  	ui_print 'phone, containing an original ROM.'
+#
+#    abort 'Installation aborted due to incompatibility'
+ # fi
+#}
 
 assert16QPR()
 {
